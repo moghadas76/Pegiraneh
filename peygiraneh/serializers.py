@@ -1,14 +1,33 @@
 from django.contrib.auth.hashers import make_password
-from rest_framework.serializers import ModelSerializer, PrimaryKeyRelatedField, CharField, RelatedField
+from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer, CharField
+from rest_framework.validators import UniqueValidator
+
 from .models import Employee, Issue
 from django.contrib.auth.models import User
 
 
 class UserSerializer(ModelSerializer):
+    username = serializers.CharField(
+        validators=[UniqueValidator(queryset=User.objects.all())]
+    )
+    password = serializers.CharField(min_length=8)
+
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'password']
         extra_kwargs = {'password': {'write_only': True}}
+
+    def create(self, validated_data):
+        try:
+            user = User(username=validated_data['username'], email=validated_data['email'])
+            user.set_password(validated_data['password'])
+            user.save()
+            # import pdb;
+            # pdb.set_trace()
+            return user
+        except ValueError as value_error:
+            raise value_error
 
 
 class IssueSerializer(ModelSerializer):

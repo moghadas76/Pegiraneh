@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d881bf7-b468-4e4f-b47c-9a30b6836100" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peygiraneh/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/peygiraneh/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peygiraneh/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/peygiraneh/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Peygiraneh.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -77,6 +80,8 @@
       <workItem from="1583915344604" duration="16344000" />
       <workItem from="1583991116742" duration="16635000" />
       <workItem from="1584256573406" duration="4684000" />
+      <workItem from="1584273029965" duration="682000" />
+      <workItem from="1584432421595" duration="13632000" />
     </task>
     <servers />
   </component>
@@ -92,14 +97,46 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583914462317" />
+    <state width="1807" height="318" key="GridCell.Tab.0.bottom" timestamp="1584437077526">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077526" />
+    <state width="1807" height="318" key="GridCell.Tab.0.center" timestamp="1584437077525">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077525" />
+    <state width="1807" height="318" key="GridCell.Tab.0.left" timestamp="1584437077524">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077524" />
+    <state width="1807" height="318" key="GridCell.Tab.0.right" timestamp="1584437077525">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077525" />
+    <state width="1807" height="318" key="GridCell.Tab.1.bottom" timestamp="1584437077528">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077528" />
+    <state width="1807" height="318" key="GridCell.Tab.1.center" timestamp="1584437077527">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077527" />
+    <state width="1807" height="318" key="GridCell.Tab.1.left" timestamp="1584437077527">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077527" />
+    <state width="1807" height="318" key="GridCell.Tab.1.right" timestamp="1584437077528">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="318" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584437077528" />
     <state x="671" y="106" key="SettingsEditor" timestamp="1583916027500">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="671" y="106" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583916027500" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584256575773">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584432437652">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584256575773" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584432437652" />
     <state x="737" y="426" width="716" height="301" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1583915245922">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
