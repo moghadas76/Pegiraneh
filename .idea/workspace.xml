@@ -33,6 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunManager">
@@ -81,7 +82,8 @@
       <workItem from="1584256573406" duration="4684000" />
       <workItem from="1584273029965" duration="682000" />
       <workItem from="1584432421595" duration="14408000" />
-      <workItem from="1585982912816" duration="3929000" />
+      <workItem from="1585982912816" duration="4205000" />
+      <workItem from="1586160803728" duration="6924000" />
     </task>
     <servers />
   </component>

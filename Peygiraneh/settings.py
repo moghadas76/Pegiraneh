@@ -138,14 +138,13 @@ REST_FRAMEWORK = {
 import ldap
 from django_auth_ldap.config import LDAPSearch, GroupOfNamesType
 
-
 # Baseline configuration.
-AUTH_LDAP_SERVER_URI = "ldap://ldap.example.com"
+AUTH_LDAP_SERVER_URI = "ldap://ldap.forumsys.com:389"
 
-AUTH_LDAP_BIND_DN = "cn=django-agent,dc=example,dc=com"
-AUTH_LDAP_BIND_PASSWORD = "phlebotinum"
+AUTH_LDAP_BIND_DN = "cn=read-only-admin,dc=forumsys,dc=com"
+AUTH_LDAP_BIND_PASSWORD = "password"
 AUTH_LDAP_USER_SEARCH = LDAPSearch(
-    "ou=users,dc=example,dc=com", ldap.SCOPE_SUBTREE, "(uid=%(user)s)"
+    "ou=users,dc=forumsys,dc=com", ldap.SCOPE_SUBTREE, "(uid=%(user)s)"
 )
 # Or:
 # AUTH_LDAP_USER_DN_TEMPLATE = 'uid=%(user)s,ou=users,dc=example,dc=com'
@@ -191,3 +190,10 @@ AUTHENTICATION_BACKENDS = (
     "django_auth_ldap.backend.LDAPBackend",
     "django.contrib.auth.backends.ModelBackend",
 )
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "loggers": {"django_auth_ldap": {"level": "DEBUG", "handlers": ["console"]}},
+}
